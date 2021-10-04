@@ -195,6 +195,20 @@ section.home {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	animation: moveInLeft 4s;
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translatex(-100px);
+  }
+  80% {
+    transform: translatex(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 .home-content h1,
 .home-content p {
